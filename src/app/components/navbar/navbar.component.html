@@ -1,0 +1,21 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <a class="navbar-brand" href="#">Demos</a>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item" routerLinkActive="router-link-active">
+          <a class="nav-link" [routerLink]="['/home']"  >Home </a>
+        </li>
+        <li class="nav-item" routerLinkActive="router-link-active">
+          <!--  mando el 10 por no crear un id, en su caso seria id -->
+          <a class="nav-link" [routerLink]="['/user', 10]">Usuaruio</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
